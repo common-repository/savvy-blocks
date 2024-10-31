@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "savvy-blocks/icon",
+  "version": "0.1.0",
+  "title": "Icon",
+  "category": "savvy-blocks",
+  "description": "Savvy Icon Block",
+  "keywords": ["Savvy", "Icon"],
+  "textdomain": "savvy-blocks",
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/style-index.css",
+  "attributes": {
+    "blockType" : {
+      "type" : "string",
+      "default": "custom"
+    },
+    "icon": {
+      "type": "object"
+    },
+    "size": {
+      "type": "number",
+      "default": 48
+    },
+    "border": {
+      "type": "object"
+    }
+  },
+  "supports": {
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "spacing": {
+      "padding": true
+    },
+    "className": false
+  }
+}

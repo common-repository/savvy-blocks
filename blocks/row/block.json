@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "savvy-blocks/row",
+  "version": "0.1.0",
+  "title": "Row",
+  "category": "savvy-blocks",
+  "description": "Savvy Row Block.",
+  "keywords": [ "Savvy", "Row" ],
+  "textdomain": "savvy-blocks",
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/style-index.css",
+  "attributes": {
+    "gap": {
+      "type": "object"
+    },
+    "rowColumns": {
+      "type": "object"
+    },
+    "flexAlignment": {
+      "type": "object"
+    },
+    "gutter": {
+      "type": "object"
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true
+  }
+}

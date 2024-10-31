@@ -1,0 +1,320 @@
+{
+  "breakpoints": ["sm", "md", "lg"],
+  "spaces": [2, 4, 8, 16, 24, 32, 48, 64],
+  "colors": [
+    {
+      "slug": "black",
+      "name": "black",
+      "color": "#171717"
+    },
+    {
+      "slug": "white",
+      "name": "white",
+      "color": "#FFFFFF"
+    }
+  ],
+  "gradients": [
+    {
+      "slug": "black",
+      "name": "black",
+      "gradient": "linear-gradient(135deg,#12c2e9 0%,#c471ed 50%,#f64f59 100%)"
+    },
+    {
+      "slug": "white",
+      "name": "white",
+      "gradient": "linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%)"
+    }
+  ],
+  "fontIcons" : [
+    {
+      "slug" : "phone",
+      "name" : "Phone",
+      "code" : "f095"
+    },
+    {
+      "slug" : "map-marker",
+      "name" : "map-marker",
+      "code" : "f041"
+    },
+    {
+      "slug" : "bars",
+      "name" : "bars",
+      "code" : "f0c9"
+    },
+    {
+      "slug" : "cross",
+      "name" : "cross",
+      "code" : "f00d"
+    },
+    {
+      "slug" : "arrow-up",
+      "name" : "Arrow Up",
+      "code" : "f062"
+    },
+    {
+      "slug" : "arrow-right",
+      "name" : "Arrow Right",
+      "code" : "f061"
+    },
+    {
+      "slug" : "arrow-down",
+      "name" : "Arrow Down",
+      "code" : "f063"
+    },
+    {
+      "slug" : "arrow-left",
+      "name" : "Arrow Left",
+      "code" : "f060"
+    },
+    {
+      "slug" : "facebook",
+      "name" : "Facebook",
+      "code" : "f09a"
+    },
+    {
+      "slug" : "facebook-square",
+      "name" : "facebook-square",
+      "code" : "f082"
+    },
+    {
+      "slug" : "instagram",
+      "name" : "Instagram",
+      "code" : "f16d"
+    },
+    {
+      "slug" : "whatsapp",
+      "name" : "whatsapp",
+      "code" : "f232"
+    },
+    {
+      "slug" : "telegram",
+      "name" : "telegram",
+      "code" : "f2c6"
+    },
+    {
+      "slug" : "twitter",
+      "name" : "twitter",
+      "code" : "f099"
+    },
+    {
+      "slug" : "youtube-play",
+      "name" : "youtube-play",
+      "code" : "f16a"
+    },
+    {
+      "slug" : "linkedin",
+      "name" : "Linkedin",
+      "code" : "f0e1"
+    },
+    {
+      "slug" : "linkedin-square",
+      "name" : "linkedin-square",
+      "code" : "f08c"
+    }
+  ],
+  "blockIcons" : {
+    "savvy-blocks/button" : ["phone", "map-marker"]
+  },
+  "blocks": {
+    "savvy-blocks/accordion": {
+      "editorSettings": {
+        "features" : {   
+          "icons": {
+            "icons-left" : true,
+            "icons-right" : true
+          },
+          "gap" : true,
+          "spacing" : {
+            "padding": true,
+            "margin" : true
+          },
+          "typography" : {
+            "textColor" : true
+          }
+        }
+      }
+    },
+    "savvy-blocks/button": {
+        "editorSettings": {
+          "features" : {   
+            "icons": {
+              "icons-left" : true,
+              "icons-right" : true
+            },
+            "background" : {
+              "backgroundColor" : true
+            },
+            "border" : {
+              "width" : true,
+              "radius" : true
+            },
+            "elementStates" : true,
+            "gap" : true,
+            "spacing" : {
+              "padding": true,
+              "margin" : true
+            },
+            "typography" : {
+              "textColor" : true
+            }
+          }
+        },
+        "defaultType": "primary",
+        "blockTypes": {
+            "primary": {
+              "text": "Primary Button",
+              "buttonType": "primary",
+              "textColor": "white",
+              "backgroundColor": "black",
+              "icons": {
+                "right": "map-marker",
+                "left": ""
+              },
+              "elementStates": {
+                  "hover": {
+                      "overlay": {
+                          "hasGradientOverlay": true,
+                          "gradient": "linear-gradient(0deg,rgb(171,80,39) 0%,rgb(171,80,39) 100%)"
+                      }
+                  }
+              }
+          },
+            "secondary": {
+              "text": "Secondary Button",
+              "buttonType": "secondary",
+              "textColor": "black",
+              "backgroundColor": "white",
+              "elementStates": {
+                  "hover": {
+                      "overlay": {
+                          "hasGradientOverlay": true,
+                          "gradient": "linear-gradient(0deg,rgb(171,80,39) 0%,rgb(171,80,39) 100%)"
+                      }
+                  }
+              }
+          }
+        }
+    },
+    "savvy-blocks/column": {
+      "editorSettings": {
+        "features" : {
+          "alignSelf" : true,
+          "column" : {
+            "offset": true
+          }
+        }
+      }
+    },
+    "savvy-blocks/container": {
+      "editorSettings": {
+        "features" : {
+          "background" : true,
+          "typography" : {
+            "textColor": true
+          }
+        }        
+      }
+    },
+    "savvy-blocks/group": {
+      "editorSettings": {
+        "features" : {
+          "background" : true,
+          "spacing" : {
+            "margin" : true,
+            "padding": true
+          },
+          "tagName" : true,
+          "typography" : {
+            "textColor" : true
+          }
+        }
+      }
+    },
+    "savvy-blocks/heading": {
+      "editorSettings": {
+        "features" : {
+          "spacing" : {
+            "margin" : true,
+            "padding": true
+          },
+          "typography" : {
+            "textAlign" : true,
+            "textColor" : true
+          }
+        }
+      }
+    },
+    "savvy-blocks/icon": {
+      "editorSettings": {
+        "features" : {
+          "border" : true,
+          "size" : true
+        }
+      }
+    },
+    "savvy-blocks/image": {
+      "editorSettings": {
+        "features" : {
+          "border" : true,
+          "overlay" : true,
+          "size" : true,
+          "spacing" : {
+            "margin" : true            
+          }
+        }
+      }
+    },
+    "savvy-blocks/link": {
+      "editorSettings": {}
+    },
+    "savvy-blocks/list": {
+      "editorSettings": {
+        "features" : {
+          "bullet" : true,
+          "gap" :true
+        }
+      }
+    },
+    "savvy-blocks/paragraph": {
+      "editorSettings": {
+        "features" : {
+          "spacing" : {
+            "margin" : true,
+            "padding": true
+          },
+          "typography" : {
+            "textAlign" : true,
+            "textColor" : true
+          }
+        }
+      }
+    },
+    "savvy-blocks/row": {
+      "editorSettings": {
+          "features" : {
+            "gap" : true,
+            "rowColumns" : true,
+            "flexAlignment" : true,
+            "gutter": true
+          }
+      }
+    },
+    "savvy-blocks/section": {
+      "editorSettings": {
+        "features" : {
+          "background" : true,
+          "spacing" : {
+            "margin" : true,
+            "padding": true
+          },
+          "typography" : {
+            "textColor" : true
+          }
+        }
+      }
+    },
+    "savvy-blocks/two-part-section": {
+      "editorSettings": {}
+    }
+  }
+}

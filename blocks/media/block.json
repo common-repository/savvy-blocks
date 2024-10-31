@@ -1,0 +1,98 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "savvy-blocks/media",
+  "version": "0.1.0",
+  "title": "Media",
+  "category": "savvy-blocks",
+  "description": "Savvy Paragraph Media.",
+  "keywords": [ "Savvy", "Block" ],
+  "textdomain": "savvy-blocks",
+  "editorScript": "file:./build/index.js",
+  "viewScript": "file:./build/view/script.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/index.css",
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "videoSize": {
+      "type": "object",
+      "default": {
+        "width": "100%",
+        "height": "100%"
+      }
+    },
+    "source": {
+      "type": "string"
+    },
+    "media": {
+      "type": "object"
+    },
+    "poster": {
+      "type": "object"
+    },
+    "mediaSettings": {
+      "type": "object",
+      "default": {
+        "fluid": true
+      }
+    },
+    "iconSettings": {
+      "type": "object"
+    },
+    "modal": {
+      "type": "boolean"
+    },
+    "overlay": {
+      "type": "object",
+      "default": {
+        "opacity": "100"
+      }
+    },
+    "icon": {
+      "type": "object"
+    },
+    "opacity": {
+      "type": "number"
+    },
+    "size": {
+      "type": "object",
+      "default": {
+        "_": "48px"
+      }
+    },
+    "rotation": {
+      "type": "number"
+    },
+    "color": {
+      "type": "string"
+    },
+    "border": {
+      "type": "object",
+      "default": {
+        "_": {
+          "width": "0"
+        }
+      }
+    },
+    "elementStates": {
+      "type": "object",
+      "default": {
+        "hover": {
+          "border": {
+            "_": {
+              "width": "0"
+            }
+          }
+        }
+      }
+    },
+    "padding": {
+      "type": "object"
+    },
+    "blockId": {
+      "type": "string"
+    }
+  }
+}

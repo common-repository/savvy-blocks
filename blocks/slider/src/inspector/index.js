@@ -1,0 +1,6 @@
+export { default as SliderSetting } from './slider-setting'
+export { default as PaginationSetting } from './pagination-setting'
+export { default as ArrowSetting } from './arrow-setting'
+export { default as ScrollbarSetting } from './scrollbar-setting'
+export { default as SliderItems } from './slider-items-setting'
+export { default as SpacingSetting } from './spacing-setting'

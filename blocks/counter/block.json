@@ -1,0 +1,64 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "savvy-blocks/counter",
+    "version": "0.1.0",
+    "title": "Counter",
+    "category": "savvy-blocks",
+    "icon": "star-filled",
+    "description": "Savvy Counter Block",
+    "keywords": ["Savvy", "counter"],
+    "textdomain": "savvy-blocks",
+    "editorScript": "file:./build/index.js",
+    "editorStyle": "file:./build/index.css",
+    "style": "file:./build/style-index.css",
+    "viewScript": "file:./build/view/script.js",
+    "attributes": {
+      "margin": {
+        "type": "object"
+      },
+      "padding": {
+        "type": "object"
+      },
+      "textAlign": {
+        "type": "object"
+      },
+      "textColor": {
+        "type": "string"
+      },
+      "endVal": {
+        "type": "number",
+        "default": 0
+      },
+      "startVal": {
+        "type": "number",
+        "default": 0
+      },
+      "separator": {
+        "type": "string",
+        "default": ","
+      },
+      "prefix": {
+        "type": "string",
+        "default": ""
+      },
+      "suffix": {
+        "type": "string",
+        "default": ""
+      },
+      "duration": {
+        "type": "number",
+        "default": 5
+      },
+      "size": {
+        "type": "number",
+        "default": 14 
+      },
+      "weight": {
+        "type": "number",
+        "default": 400
+      }
+    }
+
+  }
+  

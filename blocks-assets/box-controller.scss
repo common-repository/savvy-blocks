@@ -1,0 +1,40 @@
+.box-controller{
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.expanded {
+    height: 120px;
+  }
+
+  .select-wrapper {
+
+    .components-base-control {
+      margin: 0;
+    }
+  }
+
+  .box-all {
+    flex: 1;
+    margin-right: 8px;
+  }
+
+  .box-top {
+    position: absolute;
+    top: 0;
+  }
+  .box-left {
+    position: absolute;
+    left: 0;
+  }
+  .box-bottom {
+    position: absolute;
+    bottom: 0;
+  }
+  .box-right {
+    position: absolute;
+    right: 0;
+  }
+}

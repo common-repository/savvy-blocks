@@ -1,0 +1,34 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "savvy-blocks/map-marker",
+  "version": "0.1.0",
+  "title": "Map Marker",
+  "category": "savvy-blocks",
+  "description": "Savvy Blocks Map Marker Block",
+  "keywords": ["Savvy Blocks", "Map Marker"],
+  "textdomain": "savvy-blocks",
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/style-index.css",
+  "attributes": {
+    "coordinates" : {
+      "type" : "object",
+      "default" : {
+        "long" : 0,
+        "lat"  : 0
+      }
+    },
+    "label": {
+      "type": "string",
+      "default": ""
+    },
+    "tooltip" : {
+      "type" : "string"
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true
+  }
+}

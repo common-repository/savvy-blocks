@@ -1,0 +1,13 @@
+.editor-styles-wrapper .savvy-map-marker {
+  padding: 8px;
+
+  &.is-selected, &.has-child-selected {
+    background-color: var(--wp-admin-theme-color);
+    color: #fff;
+  }
+
+  &.is-selected {
+    margin-top: 75px;
+  }
+}
+

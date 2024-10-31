@@ -1,0 +1,29 @@
+.editor-styles-wrapper .savvy-icon{
+  display: inline-flex;
+
+  .icon-list .icon-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+
+    &.is-selected {
+      background: #eee;
+    }
+  }
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

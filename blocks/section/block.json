@@ -1,0 +1,52 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "savvy-blocks/section",
+  "version": "0.1.0",
+  "title": "Section",
+  "category": "savvy-blocks",
+  "description": "Savvy Section Block.",
+  "keywords": [ "Savvy", "Section" ],
+  "textdomain": "savvy-blocks",
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/style-index.css",
+  "attributes": {
+    "background": {
+      "type": "object"
+    },
+    "effects": {
+      "type": "object"
+    },
+    "margin": {
+      "type": "object"
+    },
+    "padding": {
+      "type": "object"
+    },
+    "textColor": {
+      "type": "string"
+    },
+    "animation": {
+      "type": "object"
+    }
+  },
+  "example": {
+      "attributes": {
+          "effects": {
+            "_": {
+                "contrast": 2.3,
+                "blur": 7.9
+            },
+            "hover": {
+                "contrast": 2.7
+            }
+          }
+      }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true
+  }
+}
+

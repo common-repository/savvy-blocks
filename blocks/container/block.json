@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "savvy-blocks/container",
+  "version": "0.1.0",
+  "title": "Container",
+  "category": "savvy-blocks",
+  "description": "Savvy Container Block.",
+  "keywords": [ "Savvy", "Container" ],
+  "textdomain": "savvy-blocks",
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/style-index.css",
+  "attributes": {
+    "background": {
+      "type": "object",
+      "default": {
+        "image": {
+          "id": 0,
+          "url": ""
+        }
+      }
+    },
+    "containerType": {
+      "type": "string",
+      "default": ""
+    },
+    "textColor": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true
+  }
+}

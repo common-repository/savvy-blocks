@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "savvy-blocks/link",
+  "version": "0.1.0",
+  "title": "Link",
+  "category": "savvy-blocks",
+  "description": "Savvy Link Block.",
+  "keywords": [ "Savvy", "Link", "Url" ],
+  "textdomain": "savvy-blocks",
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/style-index.css",
+  "attributes": {
+    "link": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "supports": {
+    "html": false
+  }
+}

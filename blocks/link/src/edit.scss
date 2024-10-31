@@ -1,0 +1,15 @@
+.editor-styles-wrapper .savvy-link {
+  padding: 8px;
+  border: 1px solid #eee;
+}
+
+.wp-block-savvy-blocks-link.components-panel {
+
+  .block-editor-link-control {
+    min-width: auto;
+
+    .block-editor-link-control__search-item-header {
+      word-break: break-all;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.savvy-list-styled {
+    display: flex;
+    flex-flow: column;
+    list-style: none;
+
+    li {
+        position: relative;
+        display: flex;
+        gap: 8px;
+
+    }
+
+    li:before,
+    .list-item:before {
+      content: '';
+      display: block;
+      border-radius: var(--list-borderRadius, 4px);
+      min-width: var(--list-size, 4px);
+      width: var(--list-size, 4px);
+      height: var(--list-size, 4px);
+      background-color: black;
+    }
+
+    &.savvy-list-ol {
+      counter-reset: ol-counter;
+
+      li,
+      .list-item {
+        counter-increment: ol-counter;
+
+        &:before {
+          content: counter(ol-counter);
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          font-size: var(--font-size);
+        }
+      }
+    }
+
+  }
+
+  .savvy-list-styled {
+
+    &.savvy-list-default {
+      padding: 2rem; //default value
+      list-style-type: var(--list-style-type, disc);    
+      list-style-position:  var(--list-style-position, outside);
+      list-style-image: var(--list-style-image, none);    
+  
+      li {
+        display: list-item !important;
+        &::marker {
+          font-size: var(--list-style-font-size, inherit);
+          line-height: 1;
+          color: var(--list-style-color, black);
+        }
+        > div {
+          position: relative;
+          top: var(--top-space, 0);
+        }
+      }
+  
+      li:before,
+      .list-item:before {
+        all: unset !important;
+      }
+    }
+  }

@@ -1,0 +1,33 @@
+.editor-styles-wrapper .savvy-tabs{
+    .fade:not(.show) {
+        display: none;
+    }
+
+    .nav-tabs {
+
+        .nav-item.default-active {
+            font-weight: 900;
+        }
+    }
+}
+
+.savvy-tabs__add-tab{
+    display: inline-flex;
+    // justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px;
+    > svg {
+        width: 23px;
+        height : 23px;
+        text-align: center;
+    }
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid #1e1e1e;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    z-index: 1;
+}

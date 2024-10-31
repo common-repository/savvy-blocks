@@ -1,0 +1,75 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "savvy-blocks/image",
+  "version": "0.1.0",
+  "title": "Image",
+  "category": "savvy-blocks",
+  "description": "Savvy Image Block.",
+  "keywords": [ "Savvy", "Image" ],
+  "textdomain": "savvy-blocks",
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/style-index.css",
+  "attributes": {
+    "blockType" : {
+      "type" : "string",
+      "default": "custom"
+    },
+    "image": {
+      "type": "object"
+    },
+    "imageSettings": {
+      "type": "object",
+      "default": {
+        "focalPoint": {
+          "x": 0.5, "y": 0.5
+        }
+      }
+    },
+    "size": {
+      "type": "object"
+    },
+    "overlay": {
+      "type": "object",
+      "default": {
+        "opacity": "25"
+      }
+    },
+    "textAlign": {
+      "type": "object"
+    },
+    "textColor": {
+      "type": "string"
+    },
+    "background": {
+      "type": "object"
+    },
+    "animation": {
+      "type": "object"
+    },
+    "effects": {
+      "type": "object"
+    },
+    "text": {
+      "type": "string",
+      "default": ""
+    },
+    "border": {
+      "type": "object",
+      "default": {
+        "width": 0
+      }
+    },
+    "margin": {
+      "type": "object"
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true,
+    "color": {
+        "gradients": true
+    }
+  }
+}

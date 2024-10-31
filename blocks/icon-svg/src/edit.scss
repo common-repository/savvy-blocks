@@ -1,0 +1,24 @@
+.editor-styles-wrapper .wp-block-savvy-blocks-icon {
+    display: inline-flex;
+  }
+
+  .icon-list .icon-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    height: 48px;
+    position: relative;
+
+    .savvy-icon-svg-remove {
+      position: absolute;
+      right: -2px;
+      top: -2px;
+      z-index: 99;
+      cursor: pointer;
+    }
+
+    &.is-selected {
+      background: #eee;
+    }
+  }

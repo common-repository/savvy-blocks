@@ -1,0 +1,59 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "savvy-blocks/heading",
+  "version": "0.1.0",
+  "title": "Heading",
+  "category": "savvy-blocks",
+  "description": "Savvy Heading Block.",
+  "keywords": [ "Savvy", "Block" ],
+  "textdomain": "savvy-blocks",
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/style-index.css",
+  "attributes": {
+    "blockType" : {
+      "type" : "string",
+      "default": "custom"
+    },
+    "headingText": {
+      "type": "string",
+      "default": ""
+    },
+    "headingType": {
+      "type": "string",
+      "default": "h2"
+    },
+    "effects": {
+      "type": "object"
+    },
+    "padding": {
+      "type": "object"
+    },
+    "margin": {
+      "type": "object"
+    },
+    "cursor": {
+      "type": "object",
+      "default": {
+        "value": "default",
+        "image": {
+          "id" : 0,
+          "url" : ""
+        }
+      }
+    },
+    "textAlign": {
+      "type": "object"
+    },
+    "textColor": {
+      "type": "string"
+    },
+    "animation": {
+      "type": "object"
+    }
+  },
+  "supports": {
+    "anchor": true
+  }
+}

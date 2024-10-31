@@ -1,0 +1,57 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "savvy-blocks/slider",
+  "version": "0.1.0",
+  "title": "Smart Slider",
+  "category": "savvy-blocks",
+  "description": "Savvy Smart Slider Block.",
+  "keywords": [ "Savvy", "Slider" ],
+  "textdomain": "savvy-blocks",
+  "editorScript": "file:./build/index.js",
+  "viewScript": "file:./build/view/script.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/index.css",
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "swiperId": {
+      "type": "string"
+    },
+    "swiperAlignment": {
+      "type": "string",
+      "default": "align-items-center"
+    },
+    "swiperModule": {
+      "type": "object",
+      "default": {
+        "navigation": true,
+        "pagination": true,
+        "scrollbar": false
+      }
+    },
+    "swiperHeight": {
+      "type": "object"
+    },
+    "pagination": {
+      "type": "object"
+    },
+    "scrollbar": {
+      "type": "object"
+    },
+    "arrow": {
+      "type": "object"
+    },
+    "slider": {
+      "type": "object"
+    },
+    "margin": {
+      "type": "object"
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true
+  }
+}

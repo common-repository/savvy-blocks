@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "savvy-blocks/tabs",
+  "version": "0.1.0",
+  "title": "Tabs",
+  "category": "savvy-blocks",
+  "description": "Savvy Tabs Block",
+  "keywords": ["Savvy", "Tabs"],
+  "textdomain": "savvy-blocks",
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/style-index.css",
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "tabs": {
+      "type": "array",
+      "selector": "div"
+    },
+    "sideTabLayout":{
+      "type": "boolean",
+      "default": false
+    },
+    "activeTabIndex":{
+      "type": "number",
+      "default": 0
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true
+  }
+}

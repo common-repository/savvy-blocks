@@ -1,0 +1,57 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "savvy-blocks/accordion",
+  "version": "0.1.0",
+  "title": "Accordion",
+  "category": "savvy-blocks",
+  "description": "Savvy Accordion Block.",
+  "keywords": [ "Savvy", "Accordion" ],
+  "textdomain": "savvy-blocks",
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/style-index.css",
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "expand": {
+      "type": "boolean"
+    },
+    "gap": {
+      "type": "object"
+    },
+    "minHeight": {
+      "type": "string"
+    },
+    "icons" : {
+      "type" : "object",
+      "default": {
+        "expanded": "",
+        "collapsed": ""
+      }
+    },
+    "level": {
+      "type": "string",
+      "default": "p"
+    },
+    "padding": {
+      "type": "object"
+    },
+    "textColor": {
+      "type": "string"
+    },
+    "openItemId": {
+      "type": "number",
+      "default": -1
+    },
+    "blockType" : {
+      "type" : "string",
+      "default": "custom"
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": false
+  }
+}

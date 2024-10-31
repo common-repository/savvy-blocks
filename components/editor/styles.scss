@@ -1,0 +1,215 @@
+.editor-styles-wrapper .wp-block.d-none {
+  display: unset !important;
+  opacity: .3;
+
+  .block-editor-warning, .block-editor-warning * {
+    border: 1px solid #eee;
+  }
+}
+
+
+
+.display-type-tabs, .editor-tabs {
+  .active-tab {
+    box-shadow: inset 0 var(--wp-admin-border-width-focus)
+      var(--wp-admin-theme-color) !important;
+    color: var(--wp-admin-theme-color);
+  }
+}
+
+.icon-list {
+  .icon-item {
+    &.is-selected {
+      [class^="icon-"],
+      [class*=" icon-"] {
+        &:before {
+          color: var(--wp-admin-theme-color);
+        }
+      }
+    }
+  }
+  &.editor-styles-wrapper {
+    padding: 0;
+  }
+}
+
+.is-modified {
+  &.components-button {
+    display: flex;
+    align-items: center;
+    color: var(--wp-admin-theme-color);
+    &:before {
+      content: "";
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: var(--wp-admin-theme-color);
+      border-radius: 50%;
+      left: 4px;
+      top: unset;
+      bottom: unset;
+    }
+  }
+}
+.show-class-list {
+  padding: 8px;
+  margin-top: 20px;
+  background-color: #eee;
+  white-space: pre-wrap;
+
+  &.savvy-changed-options {
+    margin-top: 0 !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    background-color: transparent !important;
+    color: #000 !important;
+    text-transform: uppercase;
+  }
+}
+
+.has-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.has-overlay .savvy-background-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.has-overlay > *:not(.savvy-background-overlay) {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+//START of PanelBody Pro css Codes
+.savvy_reset_button {
+  color: #f15449;
+  position: absolute;
+  top: 102px;
+  right: 6px;
+}
+.focal-point-control {
+  position: relative;
+  .components-focal-point-picker-control {
+    padding-right: 28px;
+  }
+}
+
+.savvy-toggle-panel-form-toggle {
+  margin-right: 12px;
+}
+.savvy-toggle-panel-form-toggle {
+  margin-right: 12px;
+}
+.savvy-panel-advanced-button {
+  text-transform: uppercase;
+  font-size: 9px;
+  background: transparent;
+  width: 100%;
+  display: block;
+  border: 0;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 15px;
+  &::after {
+    content: "❯";
+    position: absolute;
+    transform: translateX(-50%) rotate(90deg);
+    left: 50%;
+    bottom: 0;
+  }
+  &:hover {
+    color: #999;
+  }
+}
+.savvy-toggle-panel-body--advanced {
+  .savvy-panel-advanced-button {
+    padding-bottom: 0;
+    padding-top: 15px;
+    &::after {
+      top: 0;
+      bottom: auto;
+      transform: translate(-50%) rotate(-90deg);
+    }
+  }
+}
+.components-panel__body.savvy-toggle-panel-body {
+  padding: 16px;
+}
+
+.is-opened {
+  .components-panel__body-title {
+    margin: -16px -16px 0px -16px !important;
+  }
+}
+.components-panel__body.savvy-toggle-panel-body > .components-panel__body-title {
+  margin: -16px;
+}
+.savvy-toggle-panel-body {
+  .components-panel__arrow {
+    fill: currentColor;
+    color: #1e1e1e;
+    position: absolute;
+    right: 16px;
+    transform: translateY(-50%);
+    transition: color .1s ease-in-out;
+  }
+}
+.savvy-toggle-panel-body {
+  scroll-margin-top: 128px;
+}
+.savvy-component-body_toggle {
+  width: 100%;
+  padding: 16px 48px 16px 16px;
+  height: 100%;
+  .savvy-circle-tab {
+    margin-left: auto;
+    margin-top: 8px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    position: static;
+  }
+}
+.savvy-circle-tab {
+  width: 8px;
+  height: 8px;
+  position: relative;
+}
+div :has(> .savvy_new_toggle_panel) {
+  display: flex;
+  flex-direction: column;
+  > .components-panel__body {
+    order: 1;
+  }
+}
+.components-panel__body.savvy_new_toggle_panel {
+  order: 2 !important;
+}
+.savvy-panel-selector {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  margin-inline: 12px;
+  background: #ffc107;
+}
+
+.savvy-toggle-panel-body:not(.is-opened) > *:not(.components-panel__body-title) {
+  display: none;
+}
+
+.savvy-panel-selector:not(.savvy-showed) {
+  display: none;
+}
+
+.savvy-toggle-panel-body:has(.savvy-design-control .components-radio-control__option:not(:first-child) .is-active) .savvy-panel-selector {
+  display: block;
+}
+
+//END of PanelBody Pro css Codes

@@ -1,0 +1,22 @@
+/* SETTINGS */
+.block-active-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 600px;
+}
+
+.block-active-wrapper .block-name, .block-active-select-all {
+    flex: 1 1 auto;
+    margin-bottom: 20px !important;
+}
+
+.block-active-select-all{
+    font-weight: bold;
+}
+
+.checkboxes-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 20px;
+}

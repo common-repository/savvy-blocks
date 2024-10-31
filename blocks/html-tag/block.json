@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "savvy-blocks/html-tag",
+  "version": "0.1.0",
+  "title": "Html Tag",
+  "category": "savvy-blocks",
+  "description": "Savvy Html Tag Block.",
+  "keywords": [ "Savvy", "Html Tag" ],
+  "textdomain": "savvy-blocks",
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/style-index.css",
+  "attributes": {
+    "tagName": {
+      "type": "string",
+      "default": "div"
+    },
+    "htmlAttributes": {
+      "type": "object"
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true,
+    "className": false
+  }
+}

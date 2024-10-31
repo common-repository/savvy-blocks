@@ -1,0 +1,51 @@
+.editor-styles-wrapper .bg-edit-video {
+    background-image: url('/blocks-assets/video.jpg');
+    z-index: 0 !important;
+    width: 100%;
+    height: auto;
+    position: absolute !important;
+    object-fit: cover;
+    inset: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.editor-styles-wrapper .bg-edit-youtube {
+    z-index: 0 !important;
+    width: 100%;
+    height: auto;
+    position: absolute !important;
+    object-fit: cover;
+    inset: 0;
+
+    &:after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: black;
+        opacity: 0.5;
+    }
+}
+
+.editor-styles-wrapper .bg-edit-vimeo {
+    z-index: 0 !important;
+    width: 100%;
+    height: auto;
+    position: absolute !important;
+    object-fit: cover;
+    inset: 0;
+
+    &:after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: black;
+        opacity: 0.5;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}

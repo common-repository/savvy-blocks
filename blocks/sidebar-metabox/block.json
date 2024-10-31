@@ -1,0 +1,14 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "savvy-blocks/sidebar-metabox",
+    "version": "0.1.0",
+    "title": "Sidebar MetaBox",
+    "category": "savvy-blocks",
+    "description": "Savvy Blocks Sidebar MetaBox Block",
+    "keywords": [ "Savvy Blocks", "Sidebar MetaBox" ],
+    "textdomain": "savvy-blocks",
+    "editorScript": "file:./build/index.js",
+    "editorStyle": "file:./build/index.css",
+    "style": "file:./build/index.css"
+  }

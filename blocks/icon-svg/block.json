@@ -1,0 +1,60 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "savvy-blocks/icon-svg",
+    "version": "0.1.0",
+    "title": "SVG Icon",
+    "category": "savvy-blocks",
+    "description": "Savvy SVG Icon Block",
+    "keywords": ["Savvy", "svg icon"],
+    "textdomain": "savvy-blocks",
+    "editorScript": "file:./build/index.js",
+    "editorStyle": "file:./build/index.css",
+    "style": "file:./build/style-index.css",
+    "attributes": {
+      "blockType" : {
+        "type" : "string",
+        "default": "custom"
+      },
+      "border": {
+        "type": "object"
+      },
+      "boxShadow": {
+        "type" : "string"
+      },
+      "background": {
+        "type": "object"
+      },
+      "color": {
+        "type": "string"
+      },
+      "icon": {
+        "type": "number"
+      },
+      "opacity": {
+        "type": "number"
+      },
+      "size": {
+        "type": "object"
+      },
+      "padding": {
+        "type": "object"
+      },
+      "flexAlignment": {
+        "type": "object"
+      },
+      "rotation": {
+        "type": "number"
+      },
+      "gap": {
+        "type": "string"
+      },
+      "box-shadow" : {
+        "type": "string"
+      },
+      "elementStates": {
+        "type": "object"
+      }
+    }
+  }
+  

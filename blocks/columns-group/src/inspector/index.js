@@ -1,0 +1,6 @@
+export { default as AlignmentsSetting } from './alignments-setting'
+export { default as ColSetting } from './col-setting'
+export { default as ColumnGroupSetting, columnGroupClassGenerator, columnGroupAlignmentsClassGenerator, columnGroupGapClassGenerator, columnGroupColClassGenerator } from './column-group-setting'
+export { default as GapSetting } from './gap-setting'
+export { default as SliderItems } from './slider-items-setting'
+export { default as SpacingSetting } from './spacing-setting'

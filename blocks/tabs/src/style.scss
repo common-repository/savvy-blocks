@@ -1,0 +1,23 @@
+.savvy-tabs{
+    .nav-tabs {
+        background: #eee;
+        cursor: pointer;
+    
+        .nav-item {
+    
+            color: #000;
+            text-align: center;
+            padding: 20px;
+            border-left: 1px solid #ddd;
+    
+            &.active {
+                opacity: 1;
+            }
+    
+            &:not(.active){
+    
+                opacity: 0.5;
+            }
+        }
+    }
+}

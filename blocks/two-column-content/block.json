@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "savvy-blocks/two-part-section",
+  "version": "0.1.0",
+  "title": "Two part Section",
+  "category": "savvy-blocks",
+  "icon": "layout",
+  "description": "Savvy Block Two part Section.",
+  "keywords": [ "Savvy", "Two part Section" ],
+  "textdomain": "savvy-blocks",
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/style-index.css",
+  "attributes": {
+    "colsLayout": {
+      "type" : "object"
+    },
+    "reverse": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true
+  }
+}

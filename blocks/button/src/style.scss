@@ -1,0 +1,56 @@
+.savvy-btn {
+  display: inline-flex;
+  position: relative;
+  flex-flow: row;
+  align-items: center;
+  border-radius: inherit;
+  overflow: hidden;
+
+  &:hover, &:active {
+    color: inherit;
+    .savvy-button-overlay {
+      display: block;
+    }
+  }
+
+  .savvy-button-overlay {
+    display: none;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+
+  &.has-hover-overlay-color:hover .savvy-button-overlay {
+    background-color: var(--hover-overlay-color);
+    z-index: 1;
+  }
+
+  &.has-active-overlay-color:active .savvy-button-overlay {
+    background-color: var(--active-overlay-color);
+    z-index: 1;
+  }
+
+  &.has-hover-overlay-gradient:hover .savvy-button-overlay {
+    background-image: var(--hover-overlay-gradient);
+    z-index: 1;
+  }
+
+  &.has-active-overlay-gradient:active .savvy-button-overlay {
+    background-image: var(--active-overlay-gradient);
+    z-index: 1;
+  }
+
+  &.has-hover-overlay-opacity:hover .savvy-button-overlay {
+    opacity: var(--hover-overlay-opacity);
+    z-index: 1;
+  }
+
+  &.has-active-overlay-opacity:active .savvy-button-overlay {
+    opacity: var(--active-overlay-opacity);
+    z-index: 1;
+  }
+
+  .savvy-btn-text, .savvy-btn-icon {
+    z-index: 2;
+  }
+}

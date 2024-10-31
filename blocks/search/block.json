@@ -1,0 +1,49 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "savvy-blocks/search",
+  "version": "0.1.0",
+  "title": "Search",
+  "category": "savvy-blocks",
+  "icon": "layout",
+  "description": "Savvy Section Search.",
+  "keywords": [ "Savvy", "Search" ],
+  "textdomain": "savvy-blocks",
+  "editorScript": "file:./build/index.js",
+  "viewScript": ["file:./build/view/script.js", "Savvy-script-params"],
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/style-index.css",
+  "attributes": {
+    "autoComplete": {
+      "type": "boolean",
+      "default": false
+    },
+    "customSearch": {
+      "type": "boolean",
+      "default": false
+    },
+    "advancedCustomSearch": {
+      "type": "object",
+      "default": {
+        "active": false,
+        "fields": []
+      }
+    },
+    "postType": {
+      "type": "string",
+      "default": "post"
+    },
+    "searchFields": {
+      "type": "object",
+      "default": {
+        "text": true,
+        "category": false,
+        "tag": false
+      }
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "savvy-blocks/columns-group",
+  "version": "0.1.0",
+  "title": "Columns Group",
+  "category": "savvy-blocks",
+  "description": "Savvy Columns Group Block.",
+  "keywords": [ "Savvy", "Columns Group" ],
+  "textdomain": "savvy-blocks",
+  "editorScript": "file:./build/index.js",
+  "viewScript": "file:./build/view/script.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/index.css",
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "columnGroup": {
+      "type": "object"
+    },
+    "margin": {
+      "type": "object"
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true
+  }
+}

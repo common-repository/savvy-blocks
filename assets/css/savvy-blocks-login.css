@@ -1,0 +1,317 @@
+@import url('../../../../../../wp-includes/css/dashicons.min.css');
+
+body {
+    --orange-light: #FF6240;
+    --orange-dark: #F24F2B;
+    --black: #242424;
+    --blue: #2F55DD;
+    --gray: #F7F6F4;
+    --white: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 32px;
+    background-color: var(--gray);
+}
+
+#login {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #EDEDED;
+    background: #fff;
+    box-shadow: 0px 8px 16px 0px #00000026;
+    padding: 24px 24px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    max-width: 366px;
+}
+
+#login h1 {
+    text-align: center;
+    margin: 0 0 24px;
+}
+
+#login h1 a {
+    background-image: none;
+    text-indent: 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+    pointer-events: none;
+    color: #000;
+    text-align: center;
+    /* font-family: Monda; */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-decoration: none;
+}
+
+#login label {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: var(--black);
+    /* font-family: Manrope; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+#login .input {
+    margin: 0 0 32px;
+    width: 93%;
+    border-radius: 0;
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 400;
+    height: 34px;
+    border: 1px solid rgba(36, 36, 36, 0.30);
+    background: var(--white);
+    padding: 0 12px;
+    display: block;
+}
+
+#login .input.savvy_login_error {
+    border: 1px solid var(--orange-light);
+}
+
+#login .input.password-input {
+    margin: 0 0 16px;
+}
+
+#login .input:focus {
+    border: 1px solid;
+    outline: none;
+    box-shadow: none;
+}
+
+#login form {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    overflow: visible;
+    position: relative;
+}
+
+#login form p {
+    margin: 0;
+}
+
+#login form .submit #wp-submit {
+    background: var(--orange-light);
+    outline: none;
+    border: none;
+    color: var(--white);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 0 24px;
+    min-height: 42px;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+#login form .submit #wp-submit:focus {
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+#login form .submit #wp-submit:hover {
+    background-color: var(--orange-dark);
+}
+
+#login form .wp-hide-pw {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+#login form .wp-hide-pw span:before {
+    color: rgba(36, 36, 36, 0.30);
+}
+
+.savvy-login-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+#login form input[type="checkbox"] {
+    width: 13px;
+    min-width: 13px;
+    height: 13px;
+    border-radius: 2px;
+    border: 1px solid rgba(36, 36, 36, 0.30);
+    margin: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+#login form input[type="checkbox"]:checked::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='14' viewBox='0 0 13 14' fill='none'%3E%3Crect x='0.5' y='1' width='12' height='12' rx='1.5' fill='%232F55DD' stroke='%232F55DD'/%3E%3Cpath d='M3 8L5 10L10.5 4' stroke='white' stroke-width='2'/%3E%3C/svg%3E");
+    outline: none;
+    box-shadow: none;
+    margin: 0;
+    width: 12px;
+    height: 12px;
+    position: relative;
+    top: -2px;
+    left: -1px;
+}
+
+#login form .wp-login-lost-password {
+    color: var(--blue);
+    text-align: right;
+    /* font-family: Manrope; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.savvy-remember-me label {
+    margin-bottom: 0 !important;
+}
+
+#nav,
+#backtoblog,
+.forgetmenot {
+    display: none;
+}
+
+.savvy-return-site {
+    color: var(--blue);
+    text-align: right;
+    /* font-family: Manrope; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.savvy-login-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+div.nsl-container.nsl-container-block .nsl-container-buttons {
+    display: grid !important;
+    overflow: visible;
+}
+
+div.nsl-container.nsl-container-block .nsl-container-buttons a {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+    border: 1px solid rgba(30, 52, 50, 0.3) !important;
+    background: #fff;
+    box-shadow: none;
+    overflow: visible;
+}
+
+div.nsl-container.nsl-container-block .nsl-container-buttons a .nsl-button {
+    background-color: #fff;
+    box-shadow: none;
+    border-radius: 0;
+    overflow: visible;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-family: inherit;
+}
+
+.savvy-color-error {
+    color: var(--orange-light);
+    /* font-family: Manrope; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+#savvy-display-login-error>p.p-error,
+#savvy-display-login-error>div.p-error {
+    border-left: 0;
+    box-shadow: none;
+    margin: 0 0 32px !important;
+    padding: 16px;
+    border: 1px solid var(--orange-light);
+    font-size: 16px;
+}
+
+#savvy-display-login-error>.p-error strong {
+    color: var(--orange-light);
+    /* font-family: Manrope; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+#login_error {
+    display: none;
+}
+
+#login>.notice-info {
+    display: none;
+    border-left: 0;
+    box-shadow: none;
+    margin: 0 0 32px !important;
+    padding: 0;
+    /* border: 1px solid var(--blue); */
+    font-size: 16px;
+    text-align: center;
+}
+
+#login>.notice-info a {
+    color: var(--blue);
+}
+
+.login-action-checkemail .notice-info,
+.login-action-lostpassword .notice-info {
+    display: block !important;
+}
+
+p.submit {
+    text-align: right;
+}
+
+.wp-pwd {
+    position: relative;
+}
